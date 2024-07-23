@@ -1,0 +1,144 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f465;
+    color: #343333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #1b1a1aac;  /* Changed to black */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #e74c3c;
+}
+
+.language-switcher {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Landing section styles */
+.landing-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 80px); /* Adjust height to prevent image collision */
+    padding: 0 5%;
+    background: url('path-to-your-background-image.png') no-repeat center center/cover;
+    color: #333;
+    position: relative;
+    padding-top: 80px; /* Ensure section starts below header */
+    padding-bottom: 100px;
+}
+.intro {
+    max-width: 50%;
+    padding: 2em;
+    z-index: 1;
+    margin-top: 80px; /* Lower the image */
+    margin-bottom: 80px; 
+}
+
+.intro .hello {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    color: #aaa;
+}
+
+.intro h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+    color: #1b1a1aac;  /* Changed to black */
+}
+
+.intro span {
+    color: #e74c3c;
+}
+
+.intro .description {
+    font-size: 1.2em;
+    margin: 1em 0;
+    color: #1b1a1aac;  /* Changed to black */
+}
+
+button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.75em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1em 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+.intro-image {
+    max-width: 50%;
+    padding: 2em;
+    z-index: 1;
+    margin-top: 80px; /* Lower the image */
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
